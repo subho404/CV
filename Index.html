@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBHAMS PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/48025ab422.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png"  class="logo" srcset="">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div id="header-text">
+                <p>WEB DEVELOPER</p>
+                <br>
+                <h1>HEY,I AM <span>SUBHAM BISWAS</span><br>FROM KOLKATA</h1>
+            </div>
+        </div>
+    </div>
+  <!-------------ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/dp.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">ABOUT ME</h1>
+                    <p>I'm SUBHAM BISWAS, a B.Tech Computer Science student at Techno India University.
+                         Passionate about Data Structures ,Sotrware Development,Web Development,
+                       I enjoy problem-solving challenges and crafting
+                        visually captivating web applications</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                            <p class="tab-links" onclick="opentab('education')">EDUCATIONS</p>
+                            <p class="tab-links" onclick="opentab('projects')">PROJECTS</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>WEB DEVOLPER</span>DESIGNING WEB/APP </li>
+                                <li><span>MYSQL</span>DATA MODIFICATION</li>
+                                <li><span>JAVA,C++,PYTHON,FLASK</span>DEVELOPER</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-2025</span> <br>B.TECH FROM TECHNO INDIA UNIVERSITY </li>
+                                <li><span>HS </span><br>FROM KRISHNANAGAR COLLEGIATE SCHOOL</li>
+                                <li><span>MP FROM</span><br>AV SCHOOOL</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>PORTRFOLIO</span> using HTML CSS JS </li>
+                                <li><span>PASSWORD PROTECTED FILE SHARING</span></li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sevive -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>WEB DESIGN</h2>
+                          <p>i know html,css,javascript,react,mongodb,expressjs,nodejs</p>
+                          <a href="#">learn more</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>DATABASE</h2>
+                          <p>i know MYSQL</p>
+                          <a href="#">learn more</a>
+                    </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---portfoli--- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png" alt="" srcset="">
+                <div class="layer">
+                    <h3>SECURE SHARE</h3>
+                    <p>This app will help you to share your important file with 
+                        encryption
+                    </p>
+                    <a href="https://secure-share-theta.vercel.app/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png" alt="" srcset="">
+                <div class="layer">
+                    <h3>PORTFOLIO</h3>
+                    <p>This app will help you to showcase my skill projects 
+                        and you can also contact me 
+                        from here
+                    </p>
+                    <a href="https://secure-share-theta.vercel.app/">
+                        <i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 
+-----conatct part edhar----- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>subhoanjan3@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+919564589039</p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/subham.biswas.5851127/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/SubhamB97846294"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/subham-biswas-768b47255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="" class="btn btnn" download>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btnn" onclick="sub()">Submit</button>
+                </form>
+                <span id="message"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
